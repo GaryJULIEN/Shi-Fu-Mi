@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="essais.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="hands-container">
+		<div id="joueur" class="hand-container">
+			<div class="hand"></div>
+		</div>
+		<div id="ordi" class="hand-container">
+			<div class="hand"></div>
+		</div>
+	</div>
+
+	<button>Go</button>
+	<script type="text/javascript">
+		const handPlayer = document.querySelector('#joueur .hand');
+		const handOrdi = document.querySelector('#ordi .hand');
+		const button = document.querySelector('button');
+
+		let eltSetBackground = (el, choice)=>{
+			el.style.backgroundImage = `url(${choice}.png)`;
+		}
+
+		let animeGame = ()=>{
+			handPlayer.classList.toggle('anime');
+			handOrdi.classList.toggle('anime');
+			handPlayer.style.backgroundImage = 'url("pierre2.png")';
+			handOrdi.style.backgroundImage = 'url("pierre2.png")';
+
+			setTimeout(()=>{
+				handPlayer.classList.toggle('anime');
+				handOrdi.classList.toggle('anime');
+				handPlayer.style.backgroundImage = 'url("feuille.png")';
+				handOrdi.style.backgroundImage = 'url("ciseau.png")';
+			}, 1500);
+		}
+
+		button.addEventListener('click', (e)=>{
+			animeGame();
+		});
+
+	</script>
+</body>
+</html>

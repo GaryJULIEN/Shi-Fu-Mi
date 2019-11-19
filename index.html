@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <section>TEST</section> -->
+    <div id="timer" class="hidden"></div>
+    <div id="icons-container" class="hidden">
+        <div id="pierre"></div>
+        <div id="papier"></div>
+        <div id="ciseaux"></div>
+    </div>
+
+    <div id="button">
+        <span>ShiFuMi</span>
+        <div class="bg"></div>
+    </div>
+
+    <div id="result" class="hidden">
+        <div class="icons">
+            <div id="icon-player"></div>
+            <p class="vs">VS</p>
+            <div id="icon-machine"></div>
+        </div>
+        <div id="winner"></div>
+    </div>
+
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controler.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#icons-container{
+    width: 420px;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icons-container div{
+    height: 112px;
+    width: 112px;
+    background-image: url('bg.png');
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#result{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vs{
+    text-align: center;
+    margin: 0 50px;
+    font-size: 3rem;
+}
+#icon-machine, #icon-player{
+    height: 112px;
+    width: 112px;
+    background-image: url('bg.png');
+    border-radius: 50%;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#winner{
+    font-size: 4rem;
+    text-align: center;
+}
+
+#timer{
+    transform: translateY(-100px);
+    font-size: 5rem;
+}
+
+#icons-container div:hover{
+    transform: scale(1.05)
+}
+
+
+#pierre, .pierre{
+    background-position: 51% 7%;
+}
+#papier, .papier{
+    background-position: 8% 92%;
+}
+#ciseaux, .ciseaux{
+    background-position: 93% 92%;
+}
+
+#button{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#button span{
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button .bg{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-image: linear-gradient(278deg, rgba(110,13,18,1) 0%, rgba(234,238,227,1) 24%, rgba(121,9,56,1) 76%);
+    z-index: 1;
+    transition: 1.2s;
+}
+
+.bg-move{
+    background-position: 100px 100px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.color-pierre{
+    box-shadow: 0 0 15px #aa5d73,0 0 25px #aa5d73,0 0 35px #aa5d73;
+}
+.color-papier{
+    box-shadow: 0 0 15px #ffde53,0 0 25px #ffde53,0 0 35px #ffde53;
+}
+.color-ciseaux{
+    box-shadow: 0 0 15px #7fcfda,0 0 25px #7fcfda,0 0 35px #7fcfda;
+}
