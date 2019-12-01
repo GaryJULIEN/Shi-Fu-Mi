@@ -1,10 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Harukaze";
+    src: url("./assets/fonts/harukaze/Harukaze.ttf");
+  }
+  
+  @font-face {
+    font-family: "Kashima";
+    src: url("./assets/fonts/kashima/Kashima.otf");
+  }
+
+
 html{
     width: 100%;
     height: 100vh;
     overflow: hidden;
     padding: 0;
     margin: 0;
+    font-family: "Kashima", "Harukaze", serif;
 }
 
 body{
